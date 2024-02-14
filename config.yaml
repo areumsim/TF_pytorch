@@ -1,0 +1,16 @@
+model_params:
+    d_model: 64   # model Dimension
+    n_words: 256  # Total number of words
+    drpoout_p: 0.2  # dropout rate 
+    max_len: 100   # Maximum length of input (one sentence)
+
+    encoder_params:
+      n_hidden: 2048
+      n_head: 8
+      n_iter: 10
+
+    decoder_params:
+      n_hidden: 2048
+      n_head: 8
+      n_iter: 10
+      activation: "relu"
